@@ -1,23 +1,51 @@
 aid: anjarium-biosciences
+
 name: Anjarium Biosciences
-description: 'Anjarium Biosciences is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Anjarium Biosciences is a biotechnology company focused on developing innovative solutions in the field of synthetic biology and metabolic engineering. The company aims to accelerate the creation of sustainable bio-based products by providing advanced tools, platforms, and services for researchers and industry partners. Their mission is to bridge the gap between academic discoveries and commercial applications, fostering a collaborative ecosystem that drives scientific breakthroughs and market adoption.'
+
 url: https://raw.githubusercontent.com/api-evangelist/anjarium-biosciences/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
+- Biotechnology
+- Synthetic Biology
+- Metabolic Engineering
+- Bioinformatics
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/anjarium-biosciences-hosts.yml
+- type: Vendors
+  url: vendors/anjarium-biosciences-vendors.yml
+- type: DomainSecurity
+  url: security/anjarium-biosciences-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
